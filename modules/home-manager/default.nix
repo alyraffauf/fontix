@@ -6,6 +6,7 @@
   imports = [
     ./font-packages
     ./fontconfig
+    ./ghostty
     ./zed-editor
   ];
 
