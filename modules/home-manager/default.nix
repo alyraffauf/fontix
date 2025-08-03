@@ -34,7 +34,7 @@
 
     sizes = {
       applications = lib.mkOption {
-        type = lib.types.int;
+        type = lib.types.either lib.types.float lib.types.int;
         default = 12;
         description = "Font size for applications.";
       };
