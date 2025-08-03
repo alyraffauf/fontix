@@ -18,9 +18,11 @@
         inherit default;
       };
 
-      package = lib.mkPackageOption pkgs package {
-        description = "Package providing the ${name} font.";
-      };
+      package =
+        lib.mkPackageOption pkgs package {}
+        // {
+          description = "Package providing the ${name} font.";
+        };
     };
   in {
     emoji = mkFontOption "emoji" "Noto Color Emoji" "noto-fonts-color-emoji";
