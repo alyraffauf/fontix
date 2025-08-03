@@ -9,6 +9,7 @@
     ./ghostty
     ./gnome
     ./gtk
+    ./halloy
     ./zed-editor
   ];
 
