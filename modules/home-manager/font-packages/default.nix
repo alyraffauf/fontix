@@ -9,7 +9,7 @@
     home.packages = [
       config.fontix.emoji.package
       config.fontix.monospace.package
-      config.fontix.sans.package
+      config.fontix.sansSerif.package
       config.fontix.serif.package
     ];
   };

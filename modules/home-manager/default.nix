@@ -27,7 +27,7 @@
   in {
     emoji = mkFontOption "emoji" "Noto Color Emoji" "noto-fonts-color-emoji";
     monospace = mkFontOption "monospace" "DejaVu Sans Mono" "dejavu_fonts";
-    sans = mkFontOption "sans" "DejaVu Sans" "dejavu_fonts";
+    sansSerif = mkFontOption "sansSerif" "DejaVu Sans" "dejavu_fonts";
     serif = mkFontOption "serif" "DejaVu Serif" "dejavu_fonts";
   };
 }
