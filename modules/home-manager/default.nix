@@ -7,6 +7,8 @@
     ./font-packages
     ./fontconfig
     ./ghostty
+    ./gnome
+    ./gtk
     ./zed-editor
   ];
 
