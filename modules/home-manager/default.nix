@@ -40,7 +40,7 @@
       };
 
       desktop = lib.mkOption {
-        type = lib.types.int;
+        type = lib.types.either lib.types.float lib.types.int;
         default = 10;
         description = "Font size for desktop elements.";
       };
