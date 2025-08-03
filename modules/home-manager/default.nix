@@ -6,6 +6,7 @@
   imports = [
     ./font-packages
     ./fontconfig
+    ./zed-editor
   ];
 
   options.fontix = let
