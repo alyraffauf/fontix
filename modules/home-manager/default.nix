@@ -25,9 +25,25 @@
         };
     };
   in {
-    emoji = mkFontOption "emoji" "Noto Color Emoji" "noto-fonts-color-emoji";
-    monospace = mkFontOption "monospace" "DejaVu Sans Mono" "dejavu_fonts";
-    sansSerif = mkFontOption "sansSerif" "DejaVu Sans" "dejavu_fonts";
-    serif = mkFontOption "serif" "DejaVu Serif" "dejavu_fonts";
+    fonts = {
+      emoji = mkFontOption "emoji" "Noto Color Emoji" "noto-fonts-color-emoji";
+      monospace = mkFontOption "monospace" "DejaVu Sans Mono" "dejavu_fonts";
+      sansSerif = mkFontOption "sansSerif" "DejaVu Sans" "dejavu_fonts";
+      serif = mkFontOption "serif" "DejaVu Serif" "dejavu_fonts";
+    };
+
+    sizes = {
+      applications = lib.mkOption {
+        type = lib.types.int;
+        default = 12;
+        description = "Font size for applications.";
+      };
+
+      desktop = lib.mkOption {
+        type = lib.types.int;
+        default = 10;
+        description = "Font size for desktop elements.";
+      };
+    };
   };
 }

@@ -7,10 +7,10 @@
 
   config = lib.mkIf config.fontix.fontconfig.enable {
     fonts.fontconfig.defaultFonts = {
-      emoji = [config.fontix.emoji.name];
-      monospace = [config.fontix.monospace.name];
-      sansSerif = [config.fontix.sansSerif.name];
-      serif = [config.fontix.serif.name];
+      emoji = [config.fontix.fonts.emoji.name];
+      monospace = [config.fontix.fonts.monospace.name];
+      sansSerif = [config.fontix.fonts.sansSerif.name];
+      serif = [config.fontix.fonts.serif.name];
     };
   };
 }

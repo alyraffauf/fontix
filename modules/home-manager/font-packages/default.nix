@@ -7,10 +7,10 @@
 
   config = lib.mkIf config.fontix.font-packages.enable {
     home.packages = [
-      config.fontix.emoji.package
-      config.fontix.monospace.package
-      config.fontix.sansSerif.package
-      config.fontix.serif.package
+      config.fontix.fonts.emoji.package
+      config.fontix.fonts.monospace.package
+      config.fontix.fonts.sansSerif.package
+      config.fontix.fonts.serif.package
     ];
   };
 }
