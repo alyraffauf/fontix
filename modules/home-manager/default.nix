@@ -3,6 +3,11 @@
   pkgs,
   ...
 }: {
+  imports = [
+    ./font-packages
+    ./fontconfig
+  ];
+
   options.fontix = let
     mkFontOption = name: default: package: {
       name = lib.mkOption {
