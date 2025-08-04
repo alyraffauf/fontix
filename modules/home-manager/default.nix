@@ -10,6 +10,7 @@
     ./gnome
     ./gtk
     ./halloy
+    ./vscode
     ./zed-editor
   ];
 
