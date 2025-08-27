@@ -12,7 +12,7 @@
         config.fontix.fonts.emoji.name
       ];
 
-      font-size = config.fontix.sizes.applications * 4.0 / 3.0;
+      font-size = builtins.floor (config.fontix.sizes.applications * 4.0 / 3.0 * 100 + 0.5) / 100;
     };
   };
 }
