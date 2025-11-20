@@ -13,6 +13,8 @@
         inherit (config.fontix.fonts.sansSerif) name package;
         size = config.fontix.sizes.applications;
       };
+
+      gtk2.force = true;
     };
   };
 }
